@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Api", "OnlineStore.Api\OnlineStore.Api.csproj", "{8A2DF7AC-55EE-427A-B202-674C808DFC7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Api", "OnlineStore.Api\OnlineStore.Api.csproj", "{8A2DF7AC-55EE-427A-B202-674C808DFC7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Cms", "OnlineStore.Cms\OnlineStore.Cms.csproj", "{D9BFBC9D-2AB9-4B1B-87B9-6346348D5919}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Cms", "OnlineStore.Cms\OnlineStore.Cms.csproj", "{D9BFBC9D-2AB9-4B1B-87B9-6346348D5919}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Gateway", "1_Gateway", "{02B6CC9E-0F4C-4C46-9745-D4F0F19ADE0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A2DF7AC-55EE-427A-B202-674C808DFC7B} = {02B6CC9E-0F4C-4C46-9745-D4F0F19ADE0A}
+		{D9BFBC9D-2AB9-4B1B-87B9-6346348D5919} = {02B6CC9E-0F4C-4C46-9745-D4F0F19ADE0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C6FD640-AA85-4E12-B71F-0C338AA38E0F}
