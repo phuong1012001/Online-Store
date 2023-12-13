@@ -1,0 +1,11 @@
+E:\Online-Store\OnlineStore\OnlineStore.Domain\bin\Debug\net6.0\OnlineStore.Domain.deps.json
+E:\Online-Store\OnlineStore\OnlineStore.Domain\bin\Debug\net6.0\OnlineStore.Domain.dll
+E:\Online-Store\OnlineStore\OnlineStore.Domain\bin\Debug\net6.0\OnlineStore.Domain.pdb
+E:\Online-Store\OnlineStore\OnlineStore.Domain\obj\Debug\net6.0\OnlineStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Online-Store\OnlineStore\OnlineStore.Domain\obj\Debug\net6.0\OnlineStore.Domain.AssemblyInfoInputs.cache
+E:\Online-Store\OnlineStore\OnlineStore.Domain\obj\Debug\net6.0\OnlineStore.Domain.AssemblyInfo.cs
+E:\Online-Store\OnlineStore\OnlineStore.Domain\obj\Debug\net6.0\OnlineStore.Domain.csproj.CoreCompileInputs.cache
+E:\Online-Store\OnlineStore\OnlineStore.Domain\obj\Debug\net6.0\OnlineStore.Domain.dll
+E:\Online-Store\OnlineStore\OnlineStore.Domain\obj\Debug\net6.0\refint\OnlineStore.Domain.dll
+E:\Online-Store\OnlineStore\OnlineStore.Domain\obj\Debug\net6.0\OnlineStore.Domain.pdb
+E:\Online-Store\OnlineStore\OnlineStore.Domain\obj\Debug\net6.0\ref\OnlineStore.Domain.dll

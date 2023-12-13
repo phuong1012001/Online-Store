@@ -1,0 +1,14 @@
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\bin\Debug\net6.0\OnlineStore.DataAccess.deps.json
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\bin\Debug\net6.0\OnlineStore.DataAccess.dll
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\bin\Debug\net6.0\OnlineStore.DataAccess.pdb
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\OnlineStore.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\OnlineStore.DataAccess.AssemblyInfoInputs.cache
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\OnlineStore.DataAccess.AssemblyInfo.cs
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\OnlineStore.DataAccess.csproj.CoreCompileInputs.cache
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\OnlineStore.DataAccess.dll
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\refint\OnlineStore.DataAccess.dll
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\OnlineStore.DataAccess.pdb
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\ref\OnlineStore.DataAccess.dll
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\OnlineStore.DataAccess.csproj.AssemblyReference.cache
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\bin\Debug\net6.0\OnlineStore.DataAccess.runtimeconfig.json
+E:\Online-Store\OnlineStore\OnlineStore.DataAccess\obj\Debug\net6.0\OnlineStore.DataAccess.genruntimeconfig.cache

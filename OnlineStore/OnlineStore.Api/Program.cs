@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using OnlineStore.DataAccess.DbContexts;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<OnlineStoreDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineStoreDbContext") ?? throw new InvalidOperationException("Connection string 'OnlineStoreDbContext' not found.")));
 
 // Add services to the container.
 
