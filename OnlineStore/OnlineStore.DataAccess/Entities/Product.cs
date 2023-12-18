@@ -22,7 +22,7 @@ namespace OnlineStore.DataAccess.Entities
         public int CreatedBy { get; set; }
 
         [ForeignKey("CreatedBy")]
-        public User user { get; set; }
+        public User User { get; set; }
 
         public DateTime CreatedAt { get; set; }
 

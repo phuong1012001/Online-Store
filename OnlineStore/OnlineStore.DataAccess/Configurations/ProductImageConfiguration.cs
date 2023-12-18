@@ -4,7 +4,7 @@ using OnlineStore.DataAccess.Entities;
 
 namespace OnlineStore.DataAccess.Configurations
 {
-    internal class ProductImageConfiguration : IEntityTypeConfiguration<ProductImage>
+    public class ProductImageConfiguration : IEntityTypeConfiguration<ProductImage>
     {
         public void Configure(EntityTypeBuilder<ProductImage> builder)
         {

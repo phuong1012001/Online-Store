@@ -4,7 +4,7 @@ using OnlineStore.DataAccess.Entities;
 
 namespace OnlineStore.DataAccess.Configurations
 {
-    internal class ProductConfiguration : IEntityTypeConfiguration<Product>
+    public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {

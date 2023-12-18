@@ -4,7 +4,7 @@ using OnlineStore.DataAccess.Entities;
 
 namespace OnlineStore.DataAccess.Configurations
 {
-    internal class StockEventConfiguration : IEntityTypeConfiguration<StockEvent>
+    public class StockEventConfiguration : IEntityTypeConfiguration<StockEvent>
     {
         public void Configure(EntityTypeBuilder<StockEvent> builder)
         {

@@ -17,10 +17,60 @@ namespace OnlineStore.DataAccess.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.22")
+                .HasAnnotation("ProductVersion", "6.0.23")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("OnlineStore.DataAccess.Entities.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int?>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("OnlineStore.DataAccess.Entities.CartDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<float>("Total")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartDetails");
+                });
 
             modelBuilder.Entity("OnlineStore.DataAccess.Entities.Category", b =>
                 {
@@ -286,6 +336,34 @@ namespace OnlineStore.DataAccess.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("OnlineStore.DataAccess.Entities.Cart", b =>
+                {
+                    b.HasOne("OnlineStore.DataAccess.Entities.User", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId");
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("OnlineStore.DataAccess.Entities.CartDetail", b =>
+                {
+                    b.HasOne("OnlineStore.DataAccess.Entities.Cart", "Cart")
+                        .WithMany("CartDetails")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineStore.DataAccess.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("OnlineStore.DataAccess.Entities.Order", b =>
                 {
                     b.HasOne("OnlineStore.DataAccess.Entities.Category", null)
@@ -332,7 +410,7 @@ namespace OnlineStore.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnlineStore.DataAccess.Entities.User", "user")
+                    b.HasOne("OnlineStore.DataAccess.Entities.User", "User")
                         .WithMany()
                         .HasForeignKey("CreatedBy")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -340,7 +418,7 @@ namespace OnlineStore.DataAccess.Migrations
 
                     b.Navigation("Category");
 
-                    b.Navigation("user");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("OnlineStore.DataAccess.Entities.ProductImage", b =>
@@ -374,6 +452,11 @@ namespace OnlineStore.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Stock");
+                });
+
+            modelBuilder.Entity("OnlineStore.DataAccess.Entities.Cart", b =>
+                {
+                    b.Navigation("CartDetails");
                 });
 
             modelBuilder.Entity("OnlineStore.DataAccess.Entities.Category", b =>
