@@ -9,3 +9,7 @@ E:\Online-Store\OnlineStore\OnlineStore.BusinessLogic\obj\Debug\net6.0\OnlineSto
 E:\Online-Store\OnlineStore\OnlineStore.BusinessLogic\obj\Debug\net6.0\refint\OnlineStore.BusinessLogic.dll
 E:\Online-Store\OnlineStore\OnlineStore.BusinessLogic\obj\Debug\net6.0\OnlineStore.BusinessLogic.pdb
 E:\Online-Store\OnlineStore\OnlineStore.BusinessLogic\obj\Debug\net6.0\ref\OnlineStore.BusinessLogic.dll
+E:\Online-Store\OnlineStore\OnlineStore.BusinessLogic\bin\Debug\net6.0\OnlineStore.DataAccess.dll
+E:\Online-Store\OnlineStore\OnlineStore.BusinessLogic\bin\Debug\net6.0\OnlineStore.DataAccess.pdb
+E:\Online-Store\OnlineStore\OnlineStore.BusinessLogic\obj\Debug\net6.0\OnlineStore.BusinessLogic.csproj.AssemblyReference.cache
+E:\Online-Store\OnlineStore\OnlineStore.BusinessLogic\obj\Debug\net6.0\OnlineStore.BusinessLogic.csproj.CopyComplete
